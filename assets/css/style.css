@@ -2455,7 +2455,6 @@ hr {
         background-repeat: no-repeat;
         background-position: 120px 61%;
         padding-bottom: 20px;
-
         &::before {
             content: '';
             position: absolute;
