@@ -1144,6 +1144,7 @@ hr {
 .st-top-header {
     overflow: hidden;
     border-bottom: 1px solid rgba(12, 184, 182, 0.4);
+    background-color: #fff;
 }
 
 .st-top-header .st-top-header-in {
@@ -3051,7 +3052,7 @@ hr {
 ----------------------------------------------------------------*/
 .st-iconbox.st-style1 {
     text-align: center;
-    padding: 30px 30px 25px;
+    padding: 25px;
     border-radius: 7px;
     transition: all 0.4s ease;
     border: 1px solid #eaeaea;
@@ -3207,6 +3208,10 @@ hr {
 .st-text-block-avatar {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 576px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .st-text-block-avatar .st-avatar-name {
