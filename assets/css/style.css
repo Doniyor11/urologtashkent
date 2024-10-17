@@ -508,7 +508,7 @@ a:hover {
 .st-mp0 {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 30px 0;
 }
 
 .st-flex-center {
@@ -2142,7 +2142,7 @@ hr {
     position: absolute;
     height: 75px;
     width: 100%;
-    background-image: url(../img/shape/hero-shape.svg);
+    /*background-image: url(../img/shape/hero-shape.svg);*/
     bottom: -5px;
     z-index: -1;
 }
@@ -2321,6 +2321,13 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
+    .st-hero-shape{
+        background-image: url("../img/hero-img4.png");
+        background-size: contain;
+        background-position: 140% 100%;
+        background-repeat: no-repeat;
+    }
+
     .st-hero-shape img {
         display: none;
     }
@@ -2450,20 +2457,6 @@ hr {
 
 @media screen and (max-width: 576px) {
     .st-hero-wrap {
-        background-image: url("../img/hero-img4.png") !important;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 120px 61%;
-        padding-bottom: 20px;
-        &::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            background: rgba(0, 0, 0, 0.2);
-        }
 
     }
 }
