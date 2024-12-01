@@ -140,5 +140,15 @@
   "std": "IPPP (jinsiy yo‘l bilan yuqadigan infeksiyalar)",
   "std_description": "Asosan jinsiy yo‘l bilan yuqadigan infeksiyalar guruhi",
   "latest_news": "So‘nggi yangiliklar",
-  "contact_title": "Biz bilan aloqada qoling"
+  "contact_title": "Biz bilan aloqada qoling",
+  "full_name": "To‘liq ism",
+  "email_address": "Elektron pochta manzili",
+  "subject": "Mavzu",
+  "phone": "Telefon",
+  "message": "Xabar",
+  "send_message": "Xabar yuboring",
+  "workplace": "Ish joyi",
+  "clinic": "Klinik \"PAEONNIS\"",
+  "address": "Manzil:",
+  "address_details": "Parkent ko‘chasi 131 Mo‘ljal: Parkent bozori, EVOS qahvaxonasi bilan bir binoda (EVOSdan Parkent bozori tomon 100 m)"
 }
