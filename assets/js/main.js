@@ -410,28 +410,26 @@
         msg = $.trim(msg);
 
         if (name != '' && email != '' && msg != '') {
-          var values = "name=" + name +
-              "&subject=" + subject +
-              "&phone=" + phone +
-              "&email=" + email +
-              "&msg=" + msg;
-          $.ajax({
-            type: "POST",
-            url: "assets/php/mail.php",
-            data: values,
-            success: function () {
-              $('#name').val('');
-              $('#subject').val('');
-              $('#phone').val('');
-              $('#email').val('');
-              $('#msg').val('');
+          var data = {
+            name: name,
+            subject: subject,
+            phone: phone,
+            email: email,
+            msg: msg
+          };
 
-              $('#st-alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
-              setTimeout(function () {
-                $('#st-alert').fadeOut('slow');
-              }, 4000);
-            }
-          });
+          sendMessageToTelegram(data);
+
+          $('#name').val('');
+          $('#subject').val('');
+          $('#phone').val('');
+          $('#email').val('');
+          $('#msg').val('');
+
+          $('#st-alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Message has been sent successfully.');
+          setTimeout(function () {
+            $('#st-alert').fadeOut('slow');
+          }, 4000);
         } else {
           $('#st-alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
         }
